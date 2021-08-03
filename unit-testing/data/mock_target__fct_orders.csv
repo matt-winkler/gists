@@ -1,0 +1,4 @@
+order_key,gross_item_sales_amount,item_discount_amount,net_item_sales_amount
+1,100,200,300
+2,1100,1300,1500
+3,3900,4200,4500

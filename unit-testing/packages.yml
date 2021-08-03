@@ -1,0 +1,7 @@
+packages:
+  - package: dbt-labs/codegen
+    version: 0.3.0
+  - package: dbt-labs/dbt_external_tables
+    version: 0.6.2
+  - package: gitlabhq/snowflake_spend
+    version: 1.2.0
