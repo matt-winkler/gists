@@ -1,0 +1,13 @@
+version: 2
+
+seeds:
+  - name: mock_target__fct_orders 
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model:  ref('agg_fct_orders')
+      - dbt_utils.equality:
+          compare_model: ref('agg_fct_orders')
+          compare_columns:
+            - gross_item_sales_amount
+            - item_discount_amount
+            - net_item_sales_amount
