@@ -6,11 +6,4 @@
     )
 }}
 
-{% for i in range(0,100) %}
-   {% if not loop.last %}
-    select order_key, order_date from {{ ref('fct_order_items') }} where order_date between '1992-01-01' and '1993-12-31'
-    union all
-   {% else %}
-     select order_key, order_date from {{ ref('fct_order_items') }} where order_date between '1992-01-01' and '1993-12-31'
-   {% endif %}
-{% endfor %}
+select order_key, order_date from {{ ref('fct_order_items') }} where order_date between '1992-01-01' and '1993-12-31'
